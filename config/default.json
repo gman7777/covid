@@ -1,0 +1,4 @@
+{
+    "DB_CONNECT" : "mongodb+srv://gautam:Gautam123@cluster0.sw5ab.mongodb.net/covid?retryWrites=true&w=majority",
+    "jwtSecret": "jwtsecrettoken"
+}
