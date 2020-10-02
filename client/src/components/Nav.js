@@ -27,7 +27,7 @@ function Nav({auth: {isAuthenticated, loading}, logout}){
     );
 
     return(
-        <nav class="navbar bg-dark">
+        <nav className="navbar bg-dark">
             <h1>Covid Tracker</h1>
             {!loading && (<Fragment>{isAuthenticated ? authLinks : guestLinks} </Fragment>)}
         </nav>

@@ -4,7 +4,7 @@ import {Redirect} from 'react-router-dom';
 import {setAlert} from '../../actions/alert';
 import {register} from '../../actions/auth';
 import PropTypes from 'prop-types'; 
-
+import './Signup.css';
 function Signup({setAlert, register, isAuthenticated}){
 
     const [formData, setFormData] = useState({

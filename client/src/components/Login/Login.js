@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
-import { Redirect} from 'react-router-dom';
+import {Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
 import {login} from '../../actions/auth';
+import './Login.css';
 
 function Login({login, isAuthenticated}){
 
@@ -17,7 +18,7 @@ function Login({login, isAuthenticated}){
 
     const onSubmit = async e => {
         e.preventDefault();
-        login(email, password);
+        login({email, password});
     };
 
     //redirect if logged in
@@ -37,7 +38,6 @@ function Login({login, isAuthenticated}){
                         placeholder='Email id'
                         value={email}
                         name='email'
-                        minLength='6'
                         onChange={e => onChange(e)}
                         required/>
                 </div>

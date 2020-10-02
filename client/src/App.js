@@ -6,6 +6,8 @@ import Landing from './components/Landing';
 import Signup from './components/SIgnup/Signup';
 import Login from './components/Login/Login';
 import Alert from './components/Alert';
+import Homepage from './components/Homepage/Homepage';
+import PrivateRoute from './components/routing/PrivateRoute';
 
 //redux
 import {Provider} from 'react-redux';
@@ -14,6 +16,7 @@ import {loadUser} from './actions/auth';
 import setAuthToken  from './utils/setAuthToken';
 
 import './App.css';
+
 
 if(localStorage.token){
   setAuthToken(localStorage.token);
@@ -36,6 +39,7 @@ function App() {
               <Route path="/" exact component={Landing}/>
               <Route path="/signup" component={Signup}/>
               <Route path="/login" component={Login}/>
+              <Route path="/homepage"  component={Homepage}/>
             </Switch>
           </section>
         </div>

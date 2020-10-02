@@ -1,0 +1,21 @@
+.main-block{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    border: 2px, solid rgb(0, 0, 0);
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.right{
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    width: 50%;
+}

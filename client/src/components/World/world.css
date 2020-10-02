@@ -1,0 +1,39 @@
+.world-card{
+    border: 1px solid gray;
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+    border-radius: 20px;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.inner-items{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.item{
+    border: 1px solid gray;
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.item.recovered{
+    color: rgb(43, 182, 117);
+}
+
+.item.deaths{
+    color: rgb(255, 60, 0);
+}
+
+.item.total{
+    color: rgb(77, 192, 212);
+}
+
